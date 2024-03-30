@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Jha - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #f7f7f7;
+        }
+
+        .navbar {
+            background-color: #272727;
+        }
+
+        .navbar a {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #f0f0f0;
+        }
+
+        .hero {
+            background-color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #009688;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #00796b;
+        }
+
+        .section-heading {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #272727;
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar py-4">
+        <div class="container mx-auto flex justify-center items-center">
+            <a href="#" class="mr-6 transition duration-300 ease-in-out hover:text-gray-200 animate__animated animate__fadeInLeft">Home</a>
+            <a href="#about" class="mr-6 transition duration-300 ease-in-out hover:text-gray-200 animate__animated animate__fadeInLeft">About</a>
+            <a href="#portfolio" class="mr-6 transition duration-300 ease-in-out hover:text-gray-200 animate__animated animate__fadeInLeft">Portfolio</a>
+            <a href="#contact" class="transition duration-300 ease-in-out hover:text-gray-200 animate__animated animate__fadeInLeft">Contact</a>
+        </div>
+    </nav>
+    
+    
+
+    <section class="hero relative bg-gray-900 py-20 overflow-hidden">
+        <div class="container mx-auto flex flex-col items-center justify-center relative z-10">
+            <img src="3.jpeg" alt="Profile Image" class="mb-8 rounded-full h-32 w-32 border-4 border-white shadow-lg animate__animated animate__fadeInDown">
+    
+            <h1 class="text-4xl font-bold text-white text-center mb-6 animate__animated animate__fadeInDown">Welcome to My Portfolio</h1>
+            <p class="text-lg text-center max-w-md text-gray-300 mb-8 animate__animated animate__fadeInUp">I'm Abhishek Jha, a Computer Science Engineering student at Jain University. Explore my projects and skills.</p>
+            <a href="#portfolio" class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full animate__animated animate__fadeInUp">View Portfolio</a>
+        </div>
+    
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-900 to-transparent opacity-50"></div>
+    </section>
+    
+    
+    <section id="portfolio" class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="section-heading text-3xl font-bold text-gray-800 mb-8 animate__animated animate__fadeInDown">Portfolio 💼</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card rounded-lg overflow-hidden shadow-lg bg-white animate__animated animate__fadeInLeft">
+                    <img src="https://via.placeholder.com/400" alt="Project 1 💻" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Project 1</h3>
+                        <p class="text-gray-700 mb-4">Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="text-sm text-gray-500">Skills: HTML, CSS, JavaScript</p>
+                        <a href="#" class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full inline-block mt-4 transition duration-300 ease-in-out transform hover:scale-105">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card rounded-lg overflow-hidden shadow-lg bg-white animate__animated animate__fadeInUp">
+                    <img src="https://via.placeholder.com/400" alt="Project 2 🚀" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Project 2</h3>
+                        <p class="text-gray-700 mb-4">Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="text-sm text-gray-500">Skills: Python, Django, PostgreSQL</p>
+                        <a href="#" class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full inline-block mt-4 transition duration-300 ease-in-out transform hover:scale-105">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card rounded-lg overflow-hidden shadow-lg bg-white animate__animated animate__fadeInRight">
+                    <img src="https://via.placeholder.com/400" alt="Project 3 🎨" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Project 3</h3>
+                        <p class="text-gray-700 mb-4">Description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="text-sm text-gray-500">Skills: React, Node.js, MongoDB</p>
+                        <a href="#" class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full inline-block mt-4 transition duration-300 ease-in-out transform hover:scale-105">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="about" class="py-12 bg-gray-100">
+        <div class="container mx-auto flex justify-center">
+            <div class="p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 animate__animated animate__fadeInDown">About Me</h2>
+                <p class="text-lg text-gray-700 mb-8 animate__animated animate__fadeInUp">I am passionate about coding and technology. Currently pursuing a degree in Computer Science Engineering at Jain University, I am dedicated to continuous learning and exploring new technologies.</p>
+                <p class="text-lg text-gray-700 mb-8 animate__animated animate__fadeInUp">With a keen interest in software development, I actively contribute to various projects and seek opportunities to apply my skills and knowledge.</p>
+                <div class="flex space-x-4 animate__animated animate__fadeInUp">
+                    <button class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full animate__animated animate__fadeInUp">HTML</button>
+                    <button class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full animate__animated animate__fadeInUp">CSS</button>
+                    <button class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full animate__animated animate__fadeInUp">JavaScript</button>
+                    <button class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full animate__animated animate__fadeInUp">Python</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section id="contact" class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="section-heading text-3xl font-bold text-gray-800 mb-8 animate__animated animate__fadeInDown">Contact Me 📧</h2>
+            <p class="text-lg text-gray-700 mb-8 animate__animated animate__fadeInUp">Feel free to reach out to me for collaboration, opportunities, or just to say hello!</p>
+            <div class="flex flex-col items-center animate__animated animate__fadeInUp">
+                <a href="mailto:your@email.com" class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full inline-block mb-4 transition duration-300 ease-in-out transform hover:scale-105">Send Email</a>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300 ease-in-out transform hover:scale-105">
+                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 0C5.373 0 0 5.373 0 12c0 4.905 2.935 9.203 7.125 11.084-.097-.831-.182-2.098-.04-3.006.194-.998 1.238-6.363 1.756-7.608.19-.397.106-.562-.255-.929-.653-.645-1.065-1.478-1.065-2.421 0-3.133 2.256-5.685 5.04-5.685 2.778 0 5.041 2.552 5.041 5.685 0 .943-.412 1.776-1.064 2.421-.361.367-.446.532-.256.929.518 1.245 1.564 6.61 1.757 7.608.142.908.057 2.175-.039 3.006C21.065 21.203 24 16.905 24 12c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300 ease-in-out transform hover:scale-105">
+                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6h2v-6zm-1 7.2c-.4 0-.8-.1-1.1-.3-.3-.2-.6-.5-.8-.8-.2-.3-.3-.6-.3-1.1v-2.4h-1.8v2.4c0 .5-.1.8-.3 1.1-.2.3-.5.6-.8.8-.3.2-.7.3-1.1.3s-.8-.1-1.2-.3c-.4-.2-.7-.5-.9-.8-.2-.3-.3-.6-.3-1.1v-2.4h-1.8v2.4c0 .5-.1.8-.3 1.1-.2.3-.5.6-.8.8-.4.2-.8.3-1.2.3s-.8-.1-1.2-.3c-.4-.2-.7-.5-.9-.8-.2-.3-.3-.6-.3-1.1v-2.4h-1.8v2.4c0 .5-.1.8-.3 1.1-.2.3-.5.6-.8.8-.3.2-.7.3-1.1.3s-.8-.1-1.2-.3c-.4-.2-.7-.5-.9-.8-.2-.3-.3-.6-.3-1.1v-2.4h-1v-1.8h1v-.8c0-.4.1-.8.3-1.2.2-.4.5-.7.8-.9.3-.2.6-.3 1.1-.3h1.7v-1.8h-1.7c-.5 0-.8-.1-1.1-.3-.3-.2-.6-.5-.8-.8-.2-.3-.3-.6-.3-1.1v-.8h-1v-.8h1v-1.8h-1v-.8h1v-1.8h1v.8h1v1.8h1v.8h-1v1.8h1v.8c0 .5-.1.8-.3 1.2-.2.4-.5.7-.8.9-.3.2-.6.3-1.1.3h-1.7v1.8h1.7c.5 0 .8.1 1.1.3.3.2.6.5.8.8.2.3.3.6.3 1.1v.8h1v.8h-1v1.8h1v.8c0 .5-.1.8-.3 1.1-.2.3-.5.6-.8.8-.4.2-.8.3-1.2.3s-.8-.1-1.2-.3c-.4-.2-.7-.5-.9-.8-.2-.3-.3-.6-.3-1.1v-.8h-1v-1.8h1v-.8h-1v-1.8h1v.8h1v1.8h1v.8c0 .5-.1.8-.3 1.1-.2.3-.5.6-.8.8-.4.2-.8.3-1.2.3zm5-4.2v-1.8h-2v1.8h1v5.2h-1v1.8h3v-1.8h-1zm2-1.8h1v7h-1zm3-3v-1.8h-2v1.8h1v5.2h-1v1.8h3v-1.8h-1zm2-1.8h1v7h-1z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300 ease-in-out transform hover:scale-105">
+                        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M19.2 0h-14.4c-2.112 0-3.84 1.728-3.84 3.84v16.32c0 2.112 1.728 3.84 3.84 3.84h14.4c2.112 0 3.84-1.728 3.84-3.84v-16.32c0-2.112-1.728-3.84-3.84-3.84zm1.44 19.2c0 1.056-.864 1.92-1.92 1.92h-14.4c-1.056 0-1.92-.864-1.92-1.92v-16.32c0-1.056.864-1.92 1.92-1.92h14.4c1.056 0 1.92.864 1.92 1.92v16.32zm-6.48-11.52h3.84c.192 0 .288.096.288.288v7.104c0 .192-.096.288-.288.288h-3.84c-.192 0-.288-.096-.288-.288v-7.104c0-.192.096-.288.288-.288zm-4.032-1.152c.576-.576 1.248-.864 2.016-.864s1.44.288 2.016.864c.576.576.864 1.248.864 2.016s-.288 1.44-.864 2.016c-.576.576-1.248.864-2.016.864s-1.44-.288-2.016-.864c-.576-.576-.864-1.248-.864-2.016s.288-1.44.864-2.016zm.336 2.016c0-.576.216-1.056.648-1.44.408-.384.888-.576 1.44-.576s1.032.192 1.44.576c.384.384.576.864.576 1.44s-.192 1.032-.576 1.44c-.408.384-.888.576-1.44.576s-1.032-.192-1.44-.576c-.432-.408-.648-.888-.648-1.44zm9.72 5.76v1.92h-2.304v-1.92c0-.672-.144-1.2-.432-1.584-.336-.432-.768-.648-1.296-.648-.576 0-1.032.216-1.392.648-.336.384-.528.912-.576 1.584v1.92h-2.304v-6.048h2.304v.816c.288-.384.624-.672 1.008-.864.384-.192.84-.288 1.392-.288.792 0 1.416.216 1.872.648.432.432.648 1.008.648 1.728z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+
+</html>
