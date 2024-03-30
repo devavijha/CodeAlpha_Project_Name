@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Costar AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .feature-description {
+            color: #6B7280;
+            margin-bottom: 1.5rem;
+        }
+        /* Navigation bar */
+        nav {
+            background-color: #000000; /* Black background color */
+            padding: 10px;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        nav img.avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+        nav a {
+            color: #f3f4f6; /* White color for navigation links */
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+            margin-left: 20px; /* Add spacing between navigation items */
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #4f46e5; /* Change color on hover to light purple */
+        }
+        /* Animation */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        .bounce {
+            animation: bounce 1s infinite;
+        }
+        /* Magic effects */
+        .magic-effect {
+            transition: transform 0.3s ease;
+        }
+        .magic-effect:hover {
+            transform: rotate(360deg);
+        }
+        .footer-social-icon {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            background-color: #4F46E5;
+            color: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .footer-social-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation bar -->
+<nav class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="80" viewBox="0 0 400 100">
+                <text x="0" y="60" class="logo-text animate__animated animate__fadeIn" font-family="Arial, sans-serif" font-size="50" fill="#FFFFFF" font-weight="bold">Costar</text>
+                <text x="170" y="60" class="logo-text animate__animated animate__fadeIn" font-family="Arial, sans-serif" font-size="50" fill="#fac70b" font-weight="bold">AI</text>
+                <animate attributeName="opacity" dur="1s" values="0;1" repeatCount="1"></animate>
+            </svg>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="overview.html" class="nav-link">Overview</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="product.html" class="nav-link">Product</a>
+            <a href="signup.html" class="nav-link">Sign Up</a>
+            <a href="login.html" class="nav-link">Login</a>
+        </div>
+    </div>
+</nav>
+
+
+
+    
+    <!-- About section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Costar AI</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="border border-gray-200 rounded p-6">
+                    <h3 class="text-xl font-semibold mb-4">Our Mission</h3>
+                    <p class="text-gray-700">Costar AI is dedicated to revolutionizing collaboration through cutting-edge artificial intelligence technologies. Our mission is to empower individuals and teams to achieve greater efficiency, creativity, and success.</p>
+                </div>
+                <div class="border border-gray-200 rounded p-6">
+                    <h3 class="text-xl font-semibold mb-4">Why Choose Costar AI?</h3>
+                    <div class="flex items-center mb-4">
+                        <span class="feature-icon bounce">&#128187;</span>
+                        <div>
+                            <h4 class="feature-title">Real-time Collaboration</h4>
+                            <p class="feature-description">Work seamlessly with your team in real-time, regardless of location or time zone.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <span class="feature-icon bounce">&#128172;</span>
+                        <div>
+                            <h4 class="feature-title">AI Integration</h4>
+                            <p class="feature-description">Harness the power of AI to enhance your collaboration experience, with features like Chat GPT integration and AI-driven insights.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <span class="feature-icon bounce">&#128443;</span>
+                        <div>
+                            <h4 class="feature-title">Secure Environment</h4>
+                            <p class="feature-description">Rest assured knowing your data is protected with advanced security measures and encryption protocols.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <span class="feature-icon bounce">&#127918;</span>
+                        <div>
+                            <h4 class="feature-title">User-Friendly Interface</h4>
+                            <p class="feature-description">Enjoy a seamless and intuitive user experience designed to streamline your workflow and maximize productivity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <div class="container mx-auto">
+            <h3 class="text-xl">&copy; 2024 CostarAI. All rights reserved.</h3>
+            <!-- Social Media Icons -->
+            <div class="mt-4">
+                <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+     <!-- Font Awesome CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+     crossorigin="anonymous"></script>
+</body>
+</html>
